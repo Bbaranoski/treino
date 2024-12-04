@@ -3,14 +3,10 @@ import { useState, useEffect } from 'react'
 
 function App() {
   const [teste, setTeste] = useState(0)
-
-  useEffect(() => {
-    setInterval(() => {
-      setTeste(teste => teste + 1)
-    }, 1000)
-  },[])
-  
-  return <p>{teste} segundos</p>
+ 
+  return <button onClick={() => {
+    setTeste(teste => teste + 1)
+  }}>{teste}</button>
 }
 
 export default App;
