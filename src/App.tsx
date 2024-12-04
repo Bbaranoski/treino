@@ -6,11 +6,12 @@ function App() {
  
   return <div>
     
-      <button onClick={() => {
-        setTeste(teste => teste + 1)
-      }}>click</button>
+    <button onClick={() => {
+      setTeste(teste => teste + 1)
+    }}>click</button>
   
-      <p>{teste}</p>
-    </div>
+    <p>{teste}</p>
+  </div>
+    
 }
 export default App;
